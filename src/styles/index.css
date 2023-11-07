@@ -2,4 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp8203288.jpg");
+  background-position: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-object-fit: none;
+     object-fit: none;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
 }/*# sourceMappingURL=index.css.map */
