@@ -18,6 +18,10 @@
   max-height: $max;
 }
 
+//variables
+$font-title: "Cinzel", serif;
+$font-text: "Montserrat", sans-serif;
+
 //code
 * {
   margin: 0;
@@ -29,4 +33,5 @@ body {
   @include background;
   @include width(100vw, 100vw, 100vw);
   @include height(100vh, 100vh, 100vh);
+  font-family: $font-text;
 }
