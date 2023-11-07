@@ -1,7 +1,7 @@
 <?php
-$host = 'localhost:3306';
+$host = 'localhost';
 $user = 'root';
 $password = '';
-$database = 'mysql-course';
+$database = 'mysql-crud';
 
 $conn = new mysqli($host, $user, $password, $database);
