@@ -21,7 +21,7 @@ if (isset($_POST['username']) || isset($_POST['password'])) {
       if (!isset($_SESSION)) {
         session_start();
       }
-      $_SESSION['user'] = $user['id'];
+      $_SESSION['id'] = $user['id'];
 
       header('Location: home.php');
     } else {
