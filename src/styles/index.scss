@@ -9,6 +9,12 @@
   background-attachment: fixed;
   object-fit: none;
 }
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 @mixin width($min, $width, $max) {
   min-width: $min;
   max-width: $max;
@@ -30,8 +36,30 @@ $font-text: "Montserrat", sans-serif;
 }
 
 body {
+  @include flex(column, center, center);
   @include background;
   @include width(100vw, 100vw, 100vw);
   @include height(100vh, 100vh, 100vh);
+  //layout
+  padding: 8vh 6vw;
+  //texto
   font-family: $font-text;
+  color: #f4f4f4;
+  font-weight: 400;
+
+  & .container {
+    @include flex(row, start, start);
+    //layout
+    flex-grow: 1;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 1.5rem 2rem;
+    //background
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    //outros
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 }
