@@ -9,9 +9,43 @@
 </head>
 
 <body>
-  <section class="container">
-
-  </section>
+  <div class="container">
+    <h1>Affaled CRUD Project</h1>
+    <section class="enter">
+      <div class="login">
+        <p class="form_title">Login</p>
+        <form action="">
+          <p>
+            <label>Username</label>
+            <input type="text" name="username">
+          </p>
+          <p>
+            <label>Password</label>
+            <input type="password" name="password">
+          </p>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <div class="register">
+        <p class="form_title">Register</p>
+        <form action="">
+          <p>
+            <label>Username</label>
+            <input type="text" name="username">
+          </p>
+          <p>
+            <label>Password</label>
+            <input type="password" name="password">
+          </p>
+          <p>
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password">
+          </p>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
