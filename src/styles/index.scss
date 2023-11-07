@@ -2,7 +2,7 @@
 
 //functions
 @mixin background {
-  background-image: url("https://wallpapercave.com/wp/wp8203288.jpg");
+  background-image: url("https://images.unsplash.com/photo-1510987836583-e3fb9586c7b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: start;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,10 +56,10 @@ body {
     padding: 1.5rem 2rem;
     //background
     background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     //outros
     border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
