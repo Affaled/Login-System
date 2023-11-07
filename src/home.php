@@ -1,3 +1,9 @@
+<?php
+include 'protect.php';
+include 'connection.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
