@@ -28,6 +28,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
         if ($result) {
           header("Location: index.php");
+        } else {
+          echo "Registration failed. Please try again later.";
         }
       }
       exit;
