@@ -20,8 +20,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-      header("Location: login.php");
-      exit;
+      header("Location: index.php");
     }
   }
 }
