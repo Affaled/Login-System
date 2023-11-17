@@ -20,7 +20,7 @@ include 'login.php';
     <section class="enter">
       <div class="login">
         <p class="form_title">Login</p>
-        <form action="" method="POST">
+        <form name="login" method="POST" autocomplete="off">
           <p>
             <label>Username</label>
             <input type="text" name="username">
@@ -34,7 +34,7 @@ include 'login.php';
       </div>
       <div class="register">
         <p class="form_title">Register</p>
-        <form action="" method="POST">
+        <form name="register" method="POST" autocomplete="off">
           <p>
             <label>Username</label>
             <input type="text" name="username">
