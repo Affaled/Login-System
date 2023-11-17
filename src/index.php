@@ -22,12 +22,12 @@ include 'login.php';
         <p class="form_title">Login</p>
         <form action="login.php" name="login" method="POST" autocomplete="off">
           <p>
-            <label>Username</label>
-            <input type="text" name="username">
+            <label for="login_username">Username</label>
+            <input type="text" name="username" id="login_username">
           </p>
           <p>
-            <label>Password</label>
-            <input type="password" name="password">
+            <label for="login_password">Password</label>
+            <input type="password" name="password" id="login_password">
           </p>
           <button type="submit">Login</button>
         </form>
@@ -36,16 +36,16 @@ include 'login.php';
         <p class="form_title">Register</p>
         <form action="register.php" name="register" method="POST" autocomplete="off">
           <p>
-            <label>Username</label>
-            <input type="text" name="username">
+            <label for="register_username">Username</label>
+            <input type="text" name="username" id="register_username">
           </p>
           <p>
-            <label>Password</label>
-            <input type="password" name="password">
+            <label for="register_password">Password</label>
+            <input type="password" name="password" id="register_password">
           </p>
           <p>
-            <label>Confirm Password</label>
-            <input type="password" name="confirm_password">
+            <label for="register_confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="register_confirm_password">
           </p>
           <button type="submit">Register</button>
         </form>
