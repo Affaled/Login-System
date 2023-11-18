@@ -41,6 +41,17 @@ body .container {
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+body .container button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f4f4f4;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f92672;
+  margin: 1rem auto 0;
+}
 body .container h1 {
   font-family: "Cinzel", serif;
   font-size: 3rem;
@@ -96,15 +107,4 @@ body .container .enter div form p input {
   line-height: 1.5;
   height: 2rem;
   padding: 0 0.25rem;
-}
-body .container .enter div form button {
-  padding: 0.5rem 1rem;
-  border-radius: 0.75rem;
-  font-size: 16px;
-  font-weight: 500;
-  color: #f4f4f4;
-  line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  background-color: #f92672;
-  margin: 1rem auto 0;
 }/*# sourceMappingURL=index.css.map */
