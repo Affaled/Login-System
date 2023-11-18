@@ -3,14 +3,14 @@ include 'connection.php';
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
-  $username = $conn->real_escape_string($_POST['username']);
-  $password = $conn->real_escape_string($_POST['password']);
+  $username = trim($conn->real_escape_string($_POST['username']));
+  $password = trim($conn->real_escape_string($_POST['password']));
 
   switch (true) {
-    case empty(trim($username)):
+    case empty($usrname):
       echo "Username cannot be empty";
       exit;
-    case empty(trim($password)):
+    case empty($password):
       echo "Password cannot be empty";
       exit;
     case $password != $_POST['confirm_password']:
