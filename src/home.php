@@ -8,7 +8,6 @@ if (!isset($_SESSION['id'])) {
   header('Location: index.php');
   exit();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +16,42 @@ if (!isset($_SESSION['id'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Document</title>
 </head>
 
 <body>
-  <a href="logout.php">Logout</a>
+  <div class="container">
+    <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
+    <a href="logout.php"><button>Logout</button></a>
+    <section class="enter">
+      <div class="change_username">
+        <p class="form_title">Change username</p>
+        </p>
+        <form action="change_username.php">
+          <p>
+            <label for="new_username">New username</label>
+            <input type="text" name="new_username" id="new_username">
+          </p>
+          <button type="submit">Change</button>
+        </form>
+      </div>
+      <div class="change_password">
+        <p class="form_title">Change password</p>
+        <form action="change_password.php">
+          <p>
+            <label for="old_password">Old password</label>
+            <input type="password" name="old_password" id="old_password">
+          </p>
+          <p>
+            <label for="new_password">New password</label>
+            <input type="password" name="new_password" id="new_password">
+          </p>
+          <button type="submit">Change</button>
+        </form>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
