@@ -23,6 +23,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
           session_start();
         }
         $_SESSION['id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+
 
         header("Location: home.php");
       } else {
