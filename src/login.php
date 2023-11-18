@@ -17,7 +17,14 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
       $check_user_query = "SELECT * FROM useraccount WHERE username = '$username'" . " AND password = '$password'";
       $check_user_result = mysqli_query($conn, $check_user_query);
       if (mysqli_num_rows($check_user_result) > 0) {
-        echo "Login successful";
+        $user = mysqli_fetch_assoc($check_user_result);
+
+        if (!isset($_SESSION)) {
+          session_start();
+        }
+        $_SESSION['id'] = $user['id'];
+
+        header("Location: home.php");
       } else {
         echo "Invalid username or password";
       }
