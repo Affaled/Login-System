@@ -7,7 +7,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
   $password = trim($conn->real_escape_string($_POST['password']));
 
   switch (true) {
-    case empty($usrname):
+    case empty($username):
       echo "Username cannot be empty";
       exit;
     case empty($password):
