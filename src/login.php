@@ -3,21 +3,23 @@ include 'connection.php';
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
-  if (!empty($_POST['username']) && !empty($_POST['password'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+  $username = $conn->real_escape_string($_POST['username']);
+  $password = $conn->real_escape_string($_POST['password']);
 
-    $sql = "SELECT * FROM useraccount WHERE username = '$username' AND password = '$password'";
-    $result = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-      header("Location: home.php");
-    } else {
-      echo "Invalid username or password";
+  switch (true) {
+    case empty(trim($username)):
+      echo "Username cannot be empty";
       exit;
-    }
-  } else {
-    echo "All fields are required";
-    exit;
+    case empty(trim($password)):
+      echo "Password cannot be empty";
+      exit;
+    default:
+      $check_user_query = "SELECT * FROM useraccount WHERE username = '$username'" . " AND password = '$password'";
+      $check_user_result = mysqli_query($conn, $check_user_query);
+      if (mysqli_num_rows($check_user_result) > 0) {
+        echo "Login successful";
+      } else {
+        echo "Invalid username or password";
+      }
   }
 }
