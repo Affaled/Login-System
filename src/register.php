@@ -16,6 +16,12 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     case $password != $_POST['confirm_password']:
       echo "Passwords do not match";
       exit;
+    case strlen($password) < 8 || strlen($password) > 32:
+      echo "Password must be between 8 and 32 characters";
+      exit;
+    case strlen($username) < 3 || strlen($username) > 12:
+      echo "Username must be between 3 and 12 characters";
+      exit;
     default:
       $check_user_query = "SELECT * FROM useraccount WHERE username = '$username'";
       $check_user_result = mysqli_query($conn, $check_user_query);
