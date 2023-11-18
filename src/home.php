@@ -23,12 +23,11 @@ if (!isset($_SESSION['id'])) {
 <body>
   <div class="container">
     <h1>Welcome, <?php echo $_SESSION['username']; ?></h1>
-    <a href="logout.php"><button>Logout</button></a>
     <section class="enter">
       <div class="change_username">
         <p class="form_title">Change username</p>
         </p>
-        <form action="change_username.php">
+        <form action="change_username.php" name="username" method="POST" autocomplete="off">
           <p>
             <label for="new_username">New username</label>
             <input type="text" name="new_username" id="new_username">
@@ -38,7 +37,7 @@ if (!isset($_SESSION['id'])) {
       </div>
       <div class="change_password">
         <p class="form_title">Change password</p>
-        <form action="change_password.php">
+        <form action="change_password.php" name="change_password" method="POST" autocomplete="off">
           <p>
             <label for="old_password">Old password</label>
             <input type="password" name="old_password" id="old_password">
@@ -51,6 +50,7 @@ if (!isset($_SESSION['id'])) {
         </form>
       </div>
     </section>
+    <a href="logout.php"><button>Logout</button></a>
   </div>
 </body>
 
