@@ -1,6 +1,14 @@
 <?php
 include 'connection.php';
 
+if (!isset($_SESSION)) {
+  session_start();
+}
+if (!isset($_SESSION['id'])) {
+  header('Location: index.php');
+  exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +21,7 @@ include 'connection.php';
 </head>
 
 <body>
-  <p>Hello</p>
+  <a href="logout.php">Logout</a>
 </body>
 
 </html>
