@@ -4,7 +4,7 @@ include 'connection.php';
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
   $username = trim($conn->real_escape_string($_POST['username']));
-  $password = trim($conn->real_escape_string($_POST['password']);
+  $password = trim($conn->real_escape_string($_POST['password']));
 
   switch (true) {
     case empty($username):
