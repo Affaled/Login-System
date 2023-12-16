@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+include 'change_username.php';
 
 if (!isset($_SESSION)) {
   session_start();
@@ -27,7 +28,7 @@ if (!isset($_SESSION['id'])) {
       <div class="change_username">
         <p class="form_title">Change username</p>
         </p>
-        <form action="change_username.php" name="username" method="POST" autocomplete="off">
+        <form action="change_username.php" name="change_username" method="POST" autocomplete="off">
           <p>
             <label for="new_username">New username</label>
             <input type="text" name="new_username" id="new_username">
