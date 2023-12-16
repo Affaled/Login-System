@@ -24,6 +24,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         }
         $_SESSION['id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
+        $_SESSION['password'] = $user['password'];
 
 
         header("Location: home.php");

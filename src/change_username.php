@@ -16,8 +16,8 @@ if (isset($_POST['new_username'])) {
   $update_query = "UPDATE useraccount SET username = '$new_username' WHERE id = '$id'";
 
   if ($conn->query($update_query) === TRUE) {
-    echo "Username atualizado com sucesso!";
+    echo "Username updated successfully!";
   } else {
-    echo "Erro ao atualizar username: " . $conn->error;
+    echo "Error updating username" . $conn->error;
   }
 }
