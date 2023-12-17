@@ -51,7 +51,8 @@ body {
 
   & .container {
     @include flex(column, start, center);
-    @include width(100%, 100%, 100%);
+    width: 100%;
+    max-width: 1000px;
     flex: 1 1;
     padding: 12px 12px;
 
