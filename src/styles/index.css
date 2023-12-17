@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-width: 350px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,11 +21,9 @@ body {
   background-attachment: fixed;
   -o-object-fit: none;
      object-fit: none;
-  min-width: 100vw;
-  max-width: 100vw;
+  min-width: 350px;
   min-height: 100vh;
-  max-height: 100vh;
-  padding: 12vh 16vw;
+  padding: 8.3333333333vh 8.3333333333vw;
   font-family: "Montserrat", sans-serif;
   color: #f4f4f4;
   font-weight: 400;
@@ -31,10 +33,10 @@ body .container {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  flex-grow: 1;
   min-width: 100%;
-  min-height: 100%;
-  padding: 1.5rem 2rem;
+  max-width: 100%;
+  flex: 1 1;
+  padding: 12px 12px;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -56,6 +58,7 @@ body .container button {
 body .container h1 {
   font-family: "Cinzel", serif;
   font-size: 3rem;
+  text-align: center;
   border-bottom: 1px solid #f4f4f4;
 }
 body .container .enter {
@@ -63,7 +66,9 @@ body .container .enter {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex-grow: 1;
+  flex: 1 1;
+  flex-wrap: wrap;
+  gap: 16px;
   width: 100%;
   height: 100%;
   padding-top: 1rem;
@@ -73,16 +78,23 @@ body .container .enter div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: none;
+  max-width: 300px;
+  flex: 1 1;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2rem 3rem;
   border-radius: 1.25rem;
-  height: 100%;
 }
 body .container .enter div .form_title {
   font-size: 2.25rem;
   font-family: "Cinzel", serif;
+}
+@media (max-width: 450px) {
+  body .container .enter div .form_title {
+    font-size: 1.75rem;
+  }
 }
 body .container .enter div form {
   display: flex;
