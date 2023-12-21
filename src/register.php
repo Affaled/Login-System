@@ -33,7 +33,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         $result = mysqli_query($conn, $sql);
 
         if ($result) {
-          header("Location: index.php");
+          header("Location: ../public_html/index.php");
         } else {
           echo "Registration failed. Please try again later.";
         }
