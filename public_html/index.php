@@ -20,7 +20,7 @@ include 'src/register.php';
     <section class="enter">
       <div class="login">
         <p class="form_title">Login</p>
-        <form action="login.php" name="login" method="POST" autocomplete="off">
+        <form action="src/login.php" name="login" method="POST" autocomplete="off">
           <p>
             <label for="login_username">Username</label>
             <input type="text" name="username" id="login_username">
@@ -34,7 +34,7 @@ include 'src/register.php';
       </div>
       <div class="register">
         <p class="form_title">Register</p>
-        <form action="register.php" name="register" method="POST" autocomplete="off">
+        <form action="src/register.php" name="register" method="POST" autocomplete="off">
           <p>
             <label for="register_username">Username</label>
             <input type="text" name="username" id="register_username">
