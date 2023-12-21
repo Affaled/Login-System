@@ -11,7 +11,7 @@ include '../src/register.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{Affaled} MySQL CRUD</title>
-  <link rel="stylesheet" href="../src/styles/index.css">
+  <link rel="stylesheet" href="../src/styles/index.css" type="text/css">
 </head>
 
 <body>
