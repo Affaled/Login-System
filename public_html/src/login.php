@@ -27,7 +27,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         $_SESSION['password'] = $user['password'];
 
 
-        header("Location: ../public_html/home.php");
+        header("Location: ../home.php");
       } else {
         echo "Invalid username or password";
       }
