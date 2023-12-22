@@ -1,5 +1,4 @@
 <?php
-include 'src/connection.php';
 include 'src/login.php';
 include 'src/register.php';
 ?>

@@ -1,5 +1,4 @@
 <?php
-include 'src/connection.php';
 include 'src/change_username.php';
 
 if (!isset($_SESSION)) {
