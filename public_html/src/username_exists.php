@@ -1,5 +1,5 @@
 <?php
-include 'open_database_connection.php';
+require_once 'open_database_connection.php';
 
 function username_exists($username)
 {

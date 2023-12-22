@@ -1,5 +1,6 @@
 <?php
-include 'src/change_username.php';
+require_once 'src/change_username.php';
+require_once 'src/change_password.php';
 
 if (!isset($_SESSION)) {
   session_start();

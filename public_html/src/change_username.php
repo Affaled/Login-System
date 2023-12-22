@@ -1,5 +1,5 @@
 <?php
-include 'open_database_connection.php';
+require_once 'open_database_connection.php';
 
 if (!isset($_SESSION)) {
   session_start();

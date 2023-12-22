@@ -1,5 +1,5 @@
 <?php
-include 'username_exists.php';
+require_once 'username_exists.php';
 
 function register_validation($username, $password, $confirm_password)
 {

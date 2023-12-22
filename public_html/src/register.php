@@ -1,6 +1,6 @@
 <?php
-include 'open_database_connection.php';
-include 'register_validation.php';
+require_once 'open_database_connection.php';
+require_once 'register_validation.php';
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
 

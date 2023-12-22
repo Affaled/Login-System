@@ -1,6 +1,6 @@
 <?php
-include 'open_database_connection.php';
-include 'change_data_validation.php';
+require_once 'open_database_connection.php';
+require_once 'change_data_validation.php';
 
 if (!isset($_SESSION)) {
   session_start();

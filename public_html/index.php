@@ -1,6 +1,6 @@
 <?php
-include 'src/login.php';
-include 'src/register.php';
+require_once 'src/login.php';
+require_once 'src/register.php';
 ?>
 
 <!DOCTYPE html>
